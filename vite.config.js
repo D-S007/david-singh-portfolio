@@ -6,6 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   // Use root base for Vercel, repo name for GitHub Pages
   const isVercel = process.env.VERCEL === "1" || process.env.VERCEL_ENV;
+  const basename = isVercel ? "/" : "/david-singh-portfolio";
   return {
     base: isVercel ? "/" : `/${env.VITE_REPO_NAME}/`,
     plugins: [react(), tailwindcss()],
