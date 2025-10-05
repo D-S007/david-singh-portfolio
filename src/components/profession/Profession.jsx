@@ -1,60 +1,103 @@
-import Roles from "./Roles";
+// Certifications.jsx
+import React from "react";
 
-const rolesData = [
+const certifications = [
   {
-    id: 1,
-    title: "Data Analysis & Visualization",
-    description:
-      "I transform raw data into actionable insights by cleaning, analyzing, and visualizing it with tools like Python, R, and Tableau to tell a compelling story.",
+    name: "Google Data Analytics",
+    provider: "Google",
+    link: "#",
+    logo: "/src/assets/certifications/SQL_Advanced.png",
   },
   {
-    id: 2,
-    title: "Predictive Modeling (ML)",
-    description:
-      "I build and deploy machine learning models using frameworks like Scikit-learn and TensorFlow to forecast trends, predict outcomes, and automate decision-making.",
+    name: "AWS Cloud Practitioner",
+    provider: "Amazon Web Services",
+    link: "#",
+    logo: "/src/assets/certifications/Data_Science_With_Python.png",
   },
   {
-    id: 3,
-    title: "Data Engineering & Pipelines",
-    description:
-      "I design and manage robust data pipelines, ensuring data is efficiently extracted, transformed, and loaded (ETL) into databases like SQL for analysis.",
+    name: "Advance SQL",
+    provider: "HackerRank",
+    link: "#",
+    logo: "/src/assets/certifications/Internship.png",
   },
+  {
+    name: "Machine Learning Specialization",
+    provider: "IBM Skillsbuild",
+    link: "#",
+    logo: "/logos/coursera.png",
+  },
+  {
+    name: "NLP chatbots",
+    provider: "Nvidia",
+    link: "#",
+    logo: "/logos/coursera.png",
+  },
+  {
+    name: "Deep Learning",
+    provider: "Microsoft Learn",
+    link: "#",
+    logo: "/logos/coursera.png",
+  },
+  // {
+  //   name: "Machine Learning Specialization",
+  //   provider: "Coursera",
+  //   link: "#",
+  //   logo: "/logos/coursera.png",
+  // },
+  // {
+  //   name: "Machine Learning Specialization",
+  //   provider: "Coursera",
+  //   link: "#",
+  //   logo: "/logos/coursera.png",
+  // },
+  // {
+  //   name: "Machine Learning Specialization",
+  //   provider: "Coursera",
+  //   link: "#",
+  //   logo: "/logos/coursera.png",
+  // },
 ];
 
-const Profession = () => {
+export default function Certifications() {
   return (
-    <div
-      className="content grid md:grid-cols-2 max-xxl:px-4 xxl:px-2 py-10 md:py-15 lg:py-37.5"
-      id="services"
-    >
-      <div className="flex flex-col justify-between h-fit md:pe-8 lg:pe-35.75 max-md:text-center my-auto">
-        <p className="section-title max-md:text-center">What I do?</p>
-        <div className="mt-6 text-[14px]">
-          <p className="text-xs sm:text-lg font-normal text-gray-400 mb-4">
-            I specialize in analyzing complex datasets, building predictive
-            models, and creating clear data visualizations that drive strategic
-            business decisions.
-          </p>
-          <p className="text-xs sm:text-lg font-normal text-gray-400">
-            My approach combines statistical rigor with technical expertise to
-            uncover hidden patterns and deliver solutions that are both
-            insightful and impactful.
-          </p>
-        </div>
-        <a
-          href="mailto:[your.email@example.com]" // Changed this to a mailto link
-          className="mt-5 md:mt-12.5 btn btn-primary text-white w-fit md:py-3 md:px-6 text-[12px] sm:text-[16px] font-semibold max-md:mx-auto max-md:mb-5"
-        >
-          Say Hello!
-        </a>
+    <div className="bg-white py-16 px-8">
+      <div className="max-w-135 text-center mx-auto pb-8">
+        <p className="section-title pb-6">Certifications</p>
+        <p className="text-xs xs:text-[16px] md:text-lg text-gray-400">
+          Check out my certifications, badges & credentials.
+        </p>
       </div>
-      <div className="">
-        {rolesData.map((role, index) => (
-          <Roles role={role} key={index} />
+
+      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        {certifications.map((cert, i) => (
+          <div
+            key={i}
+            className="rounded-xl p-6 text-center transition duration-300
+                       border border-purple-200 
+                       bg-gradient-to-br from-white to-purple-50
+                       hover:from-white hover:to-purple-100
+                       hover:border-purple-500 
+                       shadow-sm hover:shadow-lg hover:shadow-purple-300/50
+                       transform hover:scale-105"
+          >
+            <img
+              src={cert.logo}
+              alt={cert.provider}
+              className="w-16 h-16 mx-auto mb-4"
+            />
+            <h3 className="font-semibold text-lg text-gray-800">{cert.name}</h3>
+            <p className="text-sm text-gray-500">{cert.provider}</p>
+            <a
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 text-sm font-medium text-purple-600 hover:underline"
+            >
+              View Certificate
+            </a>
+          </div>
         ))}
       </div>
     </div>
   );
-};
-
-export default Profession;
+}

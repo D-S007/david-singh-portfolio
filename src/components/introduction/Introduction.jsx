@@ -36,18 +36,17 @@ const Introduction = () => {
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            I'm a passionate {" "}
-            <span className="bg-highlight">Data Analyst</span> and aspiring{" "}
-            <span className="bg-highlight">Data Scientist</span> based in New Delhi.
-            I strive to solve complex problems and drive business decisions
-            through rigorous data analysis and predictive modeling.
+            A Passionate {" "}
+            <span className="bg-highlight">Data Analyst </span>
+            {/* and aspiring{" "} <span className="bg-highlight">Data Scientist</span>  */}
+            based in <span className="bg-highlight">New Delhi, India</span> with hands-on expertise in ETL Pipelines, Statistical Modeling, and Interactive Visualizations using <span className="bg-highlight"> Tableau</span>, <span className="bg-highlight">Python </span>  & <span className="bg-highlight">SQL </span> and a strong foundation in Machine Learning.
           </p>
           <p className="text-center lg:text-start">
             <a
               className="btn-primary btn btn-xs xxs:btn-lg text-white"
               href="#contact" // or add this -> mailto:singhdavid036@gmail.com
             >
-              Say Hello!
+              Let's Connect !
             </a>
           </p>
         </div>

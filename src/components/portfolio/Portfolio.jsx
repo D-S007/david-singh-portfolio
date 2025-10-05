@@ -16,7 +16,8 @@ const featuredProjectsData = [
     category: "Cohort Analysis & Customer Segmentation",
     title: "Retail Chip Sales & Customer Analysis in FMCG",
     description:
-      "Analyzed 264,000+ transactions and 71,000 customers representing $1.8M in FMCG sales to extract actionable insights. Identified high-value segment(Mainstream Young Singles/Couples), with strong preference for premium brand chips, enabling targeted marketing. Delivered an interactive Looker Studio dashboard with insights into pack-size trends, brand performance, and customer segmentation.",
+      "Analyzed 264,000+ transactions and 71,000 customers representing $1.8M in FMCG sales to extract actionable insights. Identified high-value segment(Mainstream Young Singles/Couples), with strong preference for premium brand chips, enabling targeted marketing.", 
+      // Delivered an interactive Looker Studio dashboard with insights into pack-size trends, brand performance, and customer segmentation.",
     type: "Industry Level",
     links: {
       github: "https://github.com/D-S007/Quantium_Retail_Strategy_and_Analytics",
@@ -31,7 +32,8 @@ const featuredProjectsData = [
     category: "Statistical Survey Analysis",
     title: "Digital Wellbeing Statistical Analysis",
     description:
-      "Analyzed survey dataset of 99 participants using statistical tests (t-test, Pearson correlation, Chi-square, regression) to quantify screen time impact. Engineered automated ETL pipelines generating PDF, DOCX, CSV, and PNG reports directly from Python scripts. Built and deployed an interactive Tableau dashboard visualizing correlations across demographics, improving insights accessibility by 100%.",
+      "Analyzed survey dataset of 99 participants using statistical tests (t-test, Pearson correlation, Chi-square, regression) to quantify screen time impact. Engineered automated ETL pipelines generating PDF, DOCX, CSV, and PNG reports directly from Python scripts.",
+      // Built and deployed an interactive Tableau dashboard visualizing correlations across demographics, improving insights accessibility by 100%.",
     type: "Personal Level",
     links: {
       github: "https://github.com/D-S007/Digital_Wellbeing_Statistical_Analysis",
@@ -46,7 +48,8 @@ const featuredProjectsData = [
     category: "Healthcare & Campaign Analysis",
     title: "HPV Awareness Campaign Impact Analysis",
     description:
-      "Processed and cleaned 500+ survey responses via automated SQL-backed ETL pipeline, reducing data preparation time by 40%. Performed paired t-tests, ANOVA, Wilcoxon tests, and Cronbach’s Alpha reliability analysis to measure healthcare awareness effectiveness. Deployed a Streamlit dashboard for interactive visualization of pre- and post-intervention awareness scores, enabling stakeholders to track improvement",
+      "Processed and cleaned 500+ survey responses via automated SQL-backed ETL pipeline, reducing data preparation time by 40%. Performed paired t-tests, ANOVA, Wilcoxon tests, and Cronbach’s Alpha reliability analysis to measure healthcare awareness effectiveness.",
+      // Deployed a Streamlit dashboard for interactive visualization of pre- and post-intervention awareness scores, enabling stakeholders to track improvement",
     type: "Personal Level",
     links: {
       github: "https://github.com/D-S007/HPV-Awareness-Impact-Analysis",
@@ -61,11 +64,12 @@ const featuredProjectsData = [
     category: "NLP & Machine Learning",
     title: "YouReview: AI-Powered Sentiment Extractor",
     description:
-      "Developed an end-to-end pipeline for fetching, storing, and analyzing YouTube comments using NLP. Implemented ML sentiment analysis with Scikit-learn achieving 85%+ accuracy. Built RESTful APIs with FastAPI for real-time sentiment analysis and trend detection. Deployed using cloud-ready architecture with PostgreSQL and scalable backend.",
+      "Developed an end-to-end pipeline for fetching, storing, and analyzing YouTube comments using NLP. Implemented ML sentiment analysis with Scikit-learn achieving 85%+ accuracy. Built RESTful APIs with FastAPI for real-time sentiment analysis and trend detection.",
+      // Deployed using cloud-ready architecture with PostgreSQL and scalable backend.",
     type: "Self",
     links: {
       github: "https://github.com/D-S007/YouReview",
-      liveSite: "#!", // Use 'liveSite' key for live demos
+      liveSite: null, // Use 'liveSite' key for live demos
       blog: null,
     },
   },
@@ -89,7 +93,8 @@ const featuredProjectsData = [
     category: "Machine Learning & Python",
     title: "FlowForge AI",
     description:
-      "Developed full-stack AI platform for workflow optimization and automated code generation Implemented NLP-based synthesis generating 500+ lines of code with 95% accuracy Built scalable backend with FastAPI and PostgreSQL, deployed on Vercel with cloud integration Designed responsive React frontend with real-time collaboration features.",
+      "Developed full-stack AI platform for workflow optimization and automated code generation Implemented NLP-based synthesis generating 500+ lines of code with 95% accuracy. Built scalable backend with FastAPI and PostgreSQL, deployed on Vercel with cloud integration.",
+      // Designed responsive React frontend with real-time collaboration features.",
     type: "Self",
     links: {
       github: "https://github.com/D-S007/FlowForge_AI",

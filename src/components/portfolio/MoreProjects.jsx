@@ -221,10 +221,10 @@ const MoreProjects = () => {
 
     return (
         <div className="mt-20 p-8 bg-white rounded-2xl shadow-lg border border-gray-100">
-            <h2 className="text-3xl font-bold text-center mb-4">More Projects</h2>
+            <h2 className="text-4xl font-bold text-center mb-4">More Projects</h2>
             
             {/* Simplified Filters - Only 3 */}
-            <div className="flex flex-wrap justify-center items-center gap-4 mb-8">
+            <div className="flex flex-wrap justify-center items-center gap-5 mb-8">
                 {/* Skill Filter */}
                 <select value={skillFilter} onChange={(e) => setSkillFilter(e.target.value)} className="select select-bordered select-sm">
                     <option value="All">All Skills</option>
@@ -298,7 +298,7 @@ const MoreProjects = () => {
                 </table>
             </div>
 
-            {/* Skills Summary */}
+            {/* Skills Summary
             <div className="mt-8 p-4 bg-gray-50 rounded-lg">
                 <h3 className="text-lg font-semibold mb-3 text-center">Skills Demonstrated Across Projects</h3>
                 <div className="flex flex-wrap gap-2 justify-center">
@@ -311,7 +311,7 @@ const MoreProjects = () => {
                         );
                     })}
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
