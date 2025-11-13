@@ -1,42 +1,48 @@
 // Certifications.jsx
 import React from "react";
 
+import datacampLogo from "../../assets/certifications/datacamp-logo.png";
+import deloitteLogo from "../../assets/certifications/deloitte-logo.png";
+import ibmLogo from "../../assets/certifications/ibm-logo.png";
+import hackerrankLogo from "../../assets/certifications/hackerrank-logo.png";
+import letsupgradeLogo from "../../assets/certifications/letsupgrade-logo.png";
+
 const certifications = [
   {
     name: "Data Analyst Associate",
     provider: "DataCamp",
     link: "https://www.datacamp.com/certificate/DAA0014862100958",
-    logo: "../../assets/certifications/datacamp-logo.png",
+    logo: datacampLogo,
   },
   {
     name: "Deloitte Australia - Data Analytics Job Simulation",
     provider: "Forage",
     link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_Cb6sPcAz4TiT55iGG_1753197965132_completion_certificate.pdf",
-    logo: "/src/assets/certifications/deloitte-logo.png",
+    logo: deloitteLogo,
   },
   {
     name: "Data Analytics Internship",
     provider: "IBM Skillsbuild & CSRBOX",
     link: "https://drive.google.com/file/d/1ym47O-JQWO5eemsYHMwI5DPOeuGDNyeR/view?usp=sharing",
-    logo: "/src/assets/certifications/ibm-logo.png",
-  },
-  {
-    name: "Python",
-    provider: "HackerRank",
-    link: "https://www.hackerrank.com/certificates/cbe38718b7c7",
-    logo: "/src/assets/certifications/hackerrank-logo.png",
-  },
-  {
-    name: "Data Science with Python",
-    provider: "Let's Upgrade",
-    link: "https://verify.letsupgrade.in/certificate/LUEDSFEB1251771",
-    logo: "/src/assets/certifications/letsupgrade-logo.png",
+    logo: ibmLogo,
   },
   {
     name: "Advanced SQL",
     provider: "HackerRank",
     link: "https://www.hackerrank.com/certificates/287ffb898820",
-    logo: "/src/assets/certifications/hackerrank-logo.png",
+    logo: hackerrankLogo,
+  },
+  {
+    name: "Data Science with Python",
+    provider: "Let's Upgrade",
+    link: "https://verify.letsupgrade.in/certificate/LUEDSFEB1251771",
+    logo: letsupgradeLogo,
+  },
+  {
+    name: "Python",
+    provider: "HackerRank",
+    link: "https://www.hackerrank.com/certificates/cbe38718b7c7",
+    logo: hackerrankLogo,
   },
 
   // {
