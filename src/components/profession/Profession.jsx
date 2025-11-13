@@ -6,7 +6,7 @@ const certifications = [
     name: "Data Analyst Associate",
     provider: "DataCamp",
     link: "https://www.datacamp.com/certificate/DAA0014862100958",
-    logo: "../src/assets/certifications/datacamp-logo.png",
+    logo: "../../assets/certifications/datacamp-logo.png",
   },
   {
     name: "Deloitte Australia - Data Analytics Job Simulation",
