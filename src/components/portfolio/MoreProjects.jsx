@@ -1,9 +1,9 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 
 // --- DATA FOR ALL PROJECTS ---
 const allProjectsData = [
   {
-    name: "HPV Awareness Impact Analysis in Healthcare",
+    name: "HPV Awareness Impact Analysis",
     technologies: ["Python", "SQL", "Tableau", "Statistics"],
     domains: ["Data Analysis", "Survey Data Analysis", "Healthcare Analytics"],
     type: "Case Study",
@@ -30,7 +30,7 @@ const allProjectsData = [
     sourceCode: "https://github.com/D-S007/Digital_Wellbeing_Statistical_Analysis",
     liveSite: "https://public.tableau.com/views/DigitalWellbeingStatisticalAnalysis/Dashboard",
     blog: "https://medium.com/@davidsingh.blogs/digital-wellbeing-statistical-analysis-impact-of-screen-time-on-youth-d794e44a0d78",
-    skills: ["Python", "Tableau", "Statistical Analysis", "A/B Testing", "Product Analytics", "Survey Data Analysis", "Regression Analysis", "Report"]
+    skills: ["Python", "Tableau", "Statistical Analysis", "A/B Testing", "Product Analytics", "Survey Data Analysis", "Dashboard", "Report"]
   },
   {
     name: "WHO Water & Sanitation Analysis",
@@ -42,45 +42,26 @@ const allProjectsData = [
     blog: "#!",
     skills: ["Python", "SQL", "Tableau", "Data Analysis", "Time Series Analysis", "Data Visualization", "Statistical Analysis"]
   },
+
   {
-    name: "Customer Churn Prediction Model",
-    technologies: ["Python", "R", "Logistic Regression", "Predictive Model"],
-    domains: ["Customer Service Analytics", "Predictive Modeling", "Product Analytics"],
+    name: "AI News Scraper",
+    technologies: ["Python", "API", "Web Scraping", "Data Collection"],
+    domains: ["News Analytics", "Data Collection", "Product Analytics"],
     type: "Personal Project",
-    sourceCode: "https://github.com/D-S007/Customer-Churn-Prediction",
+    sourceCode: "https://github.com/D-S007/AI-News-Scraper",
     liveSite: "#!",
     blog: "#!",
-    skills: ["Python", "R", "Logistic Regression", "Predictive Model", "Model Fitting", "Statistical Analysis", "Data Interpretation"]
+    skills: ["Python", "API", "Web Scraping", "Data Collection", "Excel", "Data Interpretation"]
   },
   {
-    name: "E-commerce Sales Performance Dashboard",
-    technologies: ["Power BI", "Excel", "SQL", "Data Visualization"],
-    domains: ["Sales Analytics", "Marketing Analytics", "Product Analytics"],
-    type: "Personal Project",
-    sourceCode: null,
-    liveSite: "#!",
-    blog: "#!",
-    skills: ["Power BI", "Excel", "SQL", "Data Visualization", "Dashboard", "Sales Analytics", "Data Analysis"]
-  },
-  {
-    name: "Marketing Funnel Testing Analysis",
-    technologies: ["Python", "A/B Testing", "Funnel Testing", "Statistics"],
-    domains: ["Marketing Analytics", "Growth Analytics", "Product Analytics"],
+    name: "Data Analytics AI Agent",
+    technologies: ["Python", "Streamlit", "Excel", "SQL", "Data Visualization"],
+    domains: ["AI Agents", "Marketing Analytics", "Product Analytics"],
     type: "Case Study",
-    sourceCode: "https://github.com/D-S007/Marketing-Funnel-Analysis",
+    sourceCode: "https://github.com/D-S007/Data-Analytics-AI-Agent",
     liveSite: "#!",
     blog: "#!",
-    skills: ["Python", "A/B Testing", "Funnel Testing", "Statistics", "Marketing Analytics", "Hypothesis Testing", "Data Interpretation"]
-  },
-  {
-    name: "Time Series Sales Forecasting",
-    technologies: ["Python", "R", "Linear Regression", "Time Series Analysis"],
-    domains: ["Sales Analytics", "Predictive Modeling", "Growth Analytics"],
-    type: "Personal Project",
-    sourceCode: "https://github.com/D-S007/Sales-Forecasting",
-    liveSite: "#!",
-    blog: "#!",
-    skills: ["Python", "R", "Linear Regression", "Time Series Analysis", "Predictive Model", "Model Fitting", "Regression Analysis"]
+    skills: ["Python", "Excel", "SQL", "Data Visualization", "Dashboard", "Sales Analytics", "Data Analysis"]
   },
   {
     name: "YouReview Sentiment Analysis",
@@ -91,7 +72,98 @@ const allProjectsData = [
     liveSite: "#!",
     blog: null,
     skills: ["Python", "Sentiment Analysis", "Data Analysis", "Customer Service Analytics", "Survey Data Analysis"]
-  }
+  },
+  {
+    name: "Content Based Movie Recommendation System",
+    technologies: ["Python", "API", "NLTK", "Seaborn","Scikit-learn"],
+    domains: ["Recommendation System", "Predictive Modeling", "Model Fitting"],
+    type: "Personal Project",
+    sourceCode: "https://github.com/D-S007/Content-Based-Movie-Recommendation-System",
+    liveSite: "https://content-based-movie-recommendation-system-david-singh.streamlit.app/",
+    blog: "#!",
+    skills: ["Python", "API", "requests", "nltk", "scikit-learn", "Recommendation System"]
+  },
+  {
+    name: "NLP based AI Chatbot",
+    technologies: ["Python", "langchain", "streamlit","nltk","huggingface","requests","AI Chatbot"],
+    domains: ["AI Chatbot", "Natural Language Processing", "Product Analytics"],
+    type: "Case Project",
+    sourceCode: "https://github.com/D-S007/CampusCopilot",
+    liveSite: "#!",
+    blog: "#!",
+    skills: ["Python", "Langchain", "Streamlit","NLTK","HuggingFace-Model","requests","AI Chatbot"]
+  },
+  {
+    name: "AI Workflow Optimization & Code Generation Software",
+    technologies: ["Typescript", "React", "Node.js", "CSS","AI Integration"],
+    domains: ["AI Workflow", "Code Generation", "Productivity Tools", "Documentation Generator"],
+    type: "Case Study",
+    sourceCode: "https://github.com/D-S007/FlowForge_AI",
+    liveSite: "https://flow-forge-ai-one.vercel.app/login",
+    blog: "#!",
+    skills: ["Typescript", "React", "Node.js", "CSS","AI Integration","Productivity Tools","Documentation Generator"]
+  },
+  {
+    name: "Weather AI Agent",
+    technologies: ["Python", "Google ADK", "API"],
+    domains: ["AI Agents", "Weather Forecasting", "Data Collection"],
+    type: "Personal Project",
+    sourceCode: "https://github.com/D-S007/Agent_Development_Kit/tree/main/Weather_AI_Agent",
+    liveSite: "#!",
+    blog: "#!",
+    skills: ["Python", "Google ADK", "API", "Data Collection", "Data Interpretation"]
+  },   
+
+//   {
+//     name: "Customer Churn Prediction Model",
+//     technologies: ["Python", "R", "Logistic Regression", "Predictive Model"],
+//     domains: ["Customer Service Analytics", "Predictive Modeling", "Product Analytics"],
+//     type: "Personal Project",
+//     sourceCode: "https://github.com/D-S007/Customer-Churn-Prediction",
+//     liveSite: "#!",
+//     blog: "#!",
+//     skills: ["Python", "R", "Logistic Regression", "Predictive Model", "Model Fitting", "Statistical Analysis", "Data Interpretation"]
+//   },
+//   {
+//     name: "E-commerce Sales Performance Dashboard",
+//     technologies: ["Power BI", "Excel", "SQL", "Data Visualization"],
+//     domains: ["Sales Analytics", "Marketing Analytics", "Product Analytics"],
+//     type: "Personal Project",
+//     sourceCode: null,
+//     liveSite: "#!",
+//     blog: "#!",
+//     skills: ["Power BI", "Excel", "SQL", "Data Visualization", "Dashboard", "Sales Analytics", "Data Analysis"]
+//   },
+//   {
+//     name: "Marketing Funnel Testing Analysis",
+//     technologies: ["Python", "A/B Testing", "Funnel Testing", "Statistics"],
+//     domains: ["Marketing Analytics", "Growth Analytics", "Product Analytics"],
+//     type: "Case Study",
+//     sourceCode: "https://github.com/D-S007/Marketing-Funnel-Analysis",
+//     liveSite: "#!",
+//     blog: "#!",
+//     skills: ["Python", "A/B Testing", "Funnel Testing", "Statistics", "Marketing Analytics", "Hypothesis Testing", "Data Interpretation"]
+//   },
+//   {
+//     name: "Time Series Sales Forecasting",
+//     technologies: ["Python", "R", "Linear Regression", "Time Series Analysis"],
+//     domains: ["Sales Analytics", "Predictive Modeling", "Growth Analytics"],
+//     type: "Personal Project",
+//     sourceCode: "https://github.com/D-S007/Sales-Forecasting",
+//     liveSite: "#!",
+//     blog: "#!",
+//     skills: ["Python", "R", "Linear Regression", "Time Series Analysis", "Predictive Model", "Model Fitting", "Regression Analysis"]
+//   },
+//   {
+//     name: "YouReview Sentiment Analysis",
+//     technologies: ["Python", "Sentiment Analysis", "FastAPI", "NLTK"],
+//     domains: ["Sentiment Analysis", "Customer Service Analytics", "Product Analytics"],
+//     type: "Personal Project",
+//     sourceCode: "https://github.com/D-S007/YouReview",
+//     liveSite: "#!",
+//     blog: null,
+//     skills: ["Python", "Sentiment Analysis", "Data Analysis", "Customer Service Analytics", "Survey Data Analysis"]
+//   }
 ];
 
 // --- COLOR MAP FOR SOLID BADGES ---
@@ -147,13 +219,20 @@ const techColorMap = {
 const skillsCategories = {
   "Analytics Tools": [
     "Tableau",
-    "Google Sheets", 
-    "RStudio",
+    // "Google Sheets", 
     "Power BI",
-    "Excel",
-    "Zoho Analytics",
+    "Microsoft Excel",
+    "RStudio",
+    // "Zoho Analytics",
     "Looker Studio"
   ],
+
+  "Analytics Languages": [
+    "Python",
+    "R", 
+    "SQL"
+  ],
+  
   "Analytics Deliverables": [
     "Data Analysis",
     "Predictive Model", 
@@ -176,11 +255,7 @@ const skillsCategories = {
     "Hypothesis Testing",
     "Statistical Analysis"
   ],
-  "Analytics Languages": [
-    "Python",
-    "R", 
-    "SQL"
-  ],
+
   "Analytics Expertise": [
     "Marketing Analytics",
     "Product Analytics", 
@@ -201,6 +276,10 @@ const MoreProjects = () => {
     const [availabilityFilter, setAvailabilityFilter] = useState("All");
     const [skillFilter, setSkillFilter] = useState("All");
 
+    // pagination state
+    const PAGE_SIZE = 4;
+    const [page, setPage] = useState(0);
+
     // Get all unique skills from projects
     const allSkills = useMemo(() => {
         const skills = allProjectsData.flatMap(p => p.skills);
@@ -218,6 +297,15 @@ const MoreProjects = () => {
             return typeMatch && availabilityMatch && skillMatch;
         });
     }, [typeFilter, availabilityFilter, skillFilter]);
+
+    // reset to first page whenever filters change
+    useEffect(() => {
+        setPage(0);
+    }, [typeFilter, availabilityFilter, skillFilter]);
+
+    const totalPages = Math.max(1, Math.ceil(filteredProjects.length / PAGE_SIZE));
+    const startIndex = page * PAGE_SIZE;
+    const paginatedProjects = filteredProjects.slice(startIndex, startIndex + PAGE_SIZE);
 
     return (
         <div className="mt-20 p-8 bg-white rounded-2xl shadow-lg border border-gray-100">
@@ -265,7 +353,7 @@ const MoreProjects = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {filteredProjects.map((project, index) => (
+                        {paginatedProjects.map((project, index) => (
                             <tr key={index} className="hover">
                                 <td className="font-semibold">{project.name}</td>
                                 <td>
@@ -296,6 +384,30 @@ const MoreProjects = () => {
                         ))}
                     </tbody>
                 </table>
+            </div>
+
+            {/* Pagination controls */}
+            <div className="flex items-center justify-between mt-6">
+                <div className="text-sm text-gray-500">
+                    Showing {Math.min(startIndex + 1, filteredProjects.length)} - {Math.min(startIndex + PAGE_SIZE, filteredProjects.length)} of {filteredProjects.length}
+                </div>
+                <div className="flex items-center gap-2">
+                    <button
+                        onClick={() => setPage(p => Math.max(0, p - 1))}
+                        disabled={page === 0}
+                        className="btn btn-sm bg-white border rounded disabled:opacity-50"
+                    >
+                        Prev
+                    </button>
+                    <div className="text-sm text-gray-600 px-2">Page {page + 1} / {totalPages}</div>
+                    <button
+                        onClick={() => setPage(p => Math.min(totalPages - 1, p + 1))}
+                        disabled={page >= totalPages - 1}
+                        className="btn btn-sm bg-white border rounded disabled:opacity-50"
+                    >
+                        Next
+                    </button>
+                </div>
             </div>
 
             {/* Skills Summary
