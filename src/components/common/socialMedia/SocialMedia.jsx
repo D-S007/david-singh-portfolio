@@ -13,7 +13,7 @@ const socialIcons = [
   { icon: faGithub, link: "https://github.com/D-S007" },
   { icon: faHackerrank, link: "https://www.hackerrank.com/profile/singhdavid036" },
   { icon: faMedium, link: "https://medium.com/@davidsingh.blogs" },
-  { icon: faInstagram, link: "https://www.instagram.com/david.datascience/" },
+  { icon: faInstagram, link: "https://www.instagram.com/david_singh006" },
   { icon: faXTwitter, link: "https://x.com/Davidsingh001" },
 
 ];
