@@ -1,21 +1,22 @@
 import {
   faGithub,
   faHackerrank,
-  faInstagram,
+  // faInstagram,
   faXTwitter,
   faLinkedin,
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const socialIcons = [
   { icon: faLinkedin, link: "https://www.linkedin.com/in/david-singh-96830324a/" },
   { icon: faGithub, link: "https://github.com/D-S007" },
+  { icon: faEnvelope, link: "mailto:singhdavid036@gmail.com" },
   { icon: faHackerrank, link: "https://www.hackerrank.com/profile/singhdavid036" },
   { icon: faMedium, link: "https://medium.com/@davidsingh.blogs" },
-  { icon: faInstagram, link: "https://www.instagram.com/david_singh006" },
   { icon: faXTwitter, link: "https://x.com/Davidsingh001" },
-
+  // { icon: faInstagram, link: "https://www.instagram.com/david_singh006" },
 ];
 
 const SocialMedia = () => {
