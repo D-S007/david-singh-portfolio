@@ -2,6 +2,8 @@ import person from "../../assets/images/person.jpg";
 import "./introduction.css";
 import InformationSummary from "./InformationSummary";
 import SocialMedia from "../common/socialMedia/SocialMedia"; // <-- adjust if your folder/file casing differs
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 // Information summary data -- UPDATED FOR A DATA ANALYST PROFILE
 const informationSummaryData = [
@@ -33,8 +35,8 @@ const Introduction = () => {
           </p>
 
           <p className="text-center lg:text-start">
-            <a className="btn-primary btn btn-xs xxs:btn-lg text-white" href="#contact">
-              Let's Connect !
+            <a className="btn-primary btn btn-xs xxs:btn-lg text-white" href="https://drive.google.com/file/d/1subtTDGC69U9R0JvT9se-upal96C3YO5/view?usp=sharing">
+              <FontAwesomeIcon icon={faDownload} /> Download Resume
             </a>
           </p>
         </div>
