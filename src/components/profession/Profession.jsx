@@ -6,6 +6,7 @@ import deloitteLogo from "../../assets/certifications/deloitte-logo.png";
 import ibmLogo from "../../assets/certifications/ibm-logo.png";
 import hackerrankLogo from "../../assets/certifications/hackerrank-logo.png";
 import letsupgradeLogo from "../../assets/certifications/letsupgrade-logo.png";
+import quantiumLogo from "../../assets/certifications/quantium-logo.jpeg";
 
 const certifications = [
   {
@@ -21,6 +22,12 @@ const certifications = [
     logo: deloitteLogo,
   },
   {
+    name: "Quantium's Data Analytics Job Simulation",
+    provider: "Forage",
+    link: "https://www.theforage.com/completion-certificates/32A6DqtsbF7LbKdcq/NkaC7knWtjSbi6aYv_32A6DqtsbF7LbKdcq_Cb6sPcAz4TiT55iGG_1763111933989_completion_certificate.pdf",
+    logo: quantiumLogo,
+  },
+  {
     name: "Data Analytics Internship",
     provider: "IBM Skillsbuild & CSRBOX",
     link: "https://drive.google.com/file/d/1ym47O-JQWO5eemsYHMwI5DPOeuGDNyeR/view?usp=sharing",
@@ -33,24 +40,19 @@ const certifications = [
     logo: hackerrankLogo,
   },
   {
-    name: "Data Science with Python",
-    provider: "Let's Upgrade",
-    link: "https://verify.letsupgrade.in/certificate/LUEDSFEB1251771",
-    logo: letsupgradeLogo,
-  },
-  {
     name: "Python",
     provider: "HackerRank",
     link: "https://www.hackerrank.com/certificates/cbe38718b7c7",
     logo: hackerrankLogo,
   },
+  {
+    name: "Data Science with Python",
+    provider: "Let's Upgrade",
+    link: "https://verify.letsupgrade.in/certificate/LUEDSFEB1251771",
+    logo: letsupgradeLogo,
+  },
 
-  // {
-  //   name: "Machine Learning Specialization",
-  //   provider: "Coursera",
-  //   link: "#",
-  //   logo: "/logos/coursera.png",
-  // },
+
   // {
   //   name: "Machine Learning Specialization",
   //   provider: "Coursera",
