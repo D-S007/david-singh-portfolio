@@ -45,7 +45,7 @@ const WorkExperience = () => {
   return (
     <section 
       id="experience" 
-      className="relative px-6 lg:px-20 pt-5 pb-10"> {/*pt changes space between Introdcution page's bottom & WE page's top*/}
+      className="relative px-6 lg:px-20 pt-15 pb-10"> {/*pt changes space between Introdcution page's bottom & WE page's top*/}
       <div className="max-w-135 text-center mx-auto pb-8">
         <p className="section-title pb-6">Work Experience</p>
         <p className="text-xs xs:text-[16px] md:text-lg text-gray-400">
