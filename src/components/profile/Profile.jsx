@@ -4,41 +4,41 @@ import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 
 const experiences = [
   {
-    company: "Quantium",
-    position: "Data Analytics Virtual Intern",
+    company: "IBM SkillsBuild & CSRBOX",
+    position: "Data Analytics Intern",
     location: "Remote",
-    duration: "Jun 2024 – Jul 2024",
-    github: "https://github.com/d-s007/quantium-retail-analysis",
-    certificate: "https://forage-quantium-certificate-link",
+    duration: "June 2024 – Aug 2024",
+    github: "https://github.com/D-S007/Global-Water-and-Sanitation-Analysis",
+    certificate: "https://drive.google.com/file/d/1ym47O-JQWO5eemsYHMwI5DPOeuGDNyeR/view?usp=sharing",
     bullets: [
-      "Cleaned and analyzed retail transaction datasets using Python & SQL.",
-      "Performed segment analysis and hypothesis testing to uncover insights.",
-      "Generated automated Excel/BI deliverables reducing manual effort by 30%."
+      "Project Course: Analyzed 20 years of WHO data on 'Water and Sanitation access' across 100+ countries.",
+      "TechStack: Used Python (Pandas, NumPy, Seaborn), SQL & Tableau to explore correlations between service levels (basic, limited, safely managed).",
+      "Impact: Identified key challenges, uncovered long-term trends, and recommended five SDG-6 aligned interventions."
     ]
   },
   {
-    company: "PwC Switzerland",
-    position: "Power BI Intern (Virtual)",
-    location: "Remote",
-    duration: "Apr 2024 – May 2024",
-    certificate: "https://forage-pwc-certificate-link",
+    company: "MCN Solutions",
+    position: "Python Developer Intern",
+    location: "On-site",
+    duration: "Jan 2024 – May 2024",
+    certificate: "https://drive.google.com/file/d/1WvrzyussZShh53QBnyi1ZUr0Yfu-kTBx/view?usp=sharing",
     bullets: [
-      "Developed Power BI dashboards for customer churn analysis.",
-      "Built KPI scorecards for executive-level reporting.",
-      "Automated data refresh pipelines improving reporting speed."
+      "Participated in an intensive, project-based training program focused on advancing Python proficiency beyond core fundamentals.",
+      "Key training areas included asynchronous programming (asyncio), building and consuming RESTful APIs, advanced data structures, and design patterns.",
+      "Led the end-to-end development of 'CodeGalaxy' - a scalable coding challenge platform.Architected the system using advanced OOP principles to create a modular execution engine, problem management system, and real-time result evaluator."
     ]
   },
-  {
-    company: "Freelance (Fiverr)",
-    position: "Data Analyst (Freelance Projects)",
-    location: "Remote",
-    duration: "2023 – Present",
-    bullets: [
-      "Delivered ETL pipelines, dashboards, and insights for global clients.",
-      "Executed Excel automation & SQL reporting solutions.",
-      "Built custom analytics apps using Streamlit and FastAPI."
-    ]
-  }
+  // {
+  //   company: "Freelance (Upwork)",
+  //   position: "Data Analyst (Freelance Projects)",
+  //   location: "Remote",
+  //   duration: "May 2025 – Present",
+  //   bullets: [
+  //     "Delivered ETL pipelines, dashboards, and insights for global clients.",
+  //     "Executed Excel automation & SQL reporting solutions.",
+  //     "Built custom analytics apps using Streamlit and FastAPI."
+  //   ]
+  // }
 ];
 
 const WorkExperience = () => {
