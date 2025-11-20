@@ -67,7 +67,7 @@ const certifications = [
 
 export default function Certifications() {
   return (
-    <div className="bg-white py-16 px-8">
+    <section id="certifications" className="bg-white py-16 px-8">
       <div className="max-w-135 text-center mx-auto pb-8">
         <p className="section-title pb-6">Certifications</p>
         <p className="text-xs xs:text-[16px] md:text-lg text-gray-400">
@@ -105,6 +105,6 @@ export default function Certifications() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
