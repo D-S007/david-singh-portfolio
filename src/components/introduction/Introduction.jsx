@@ -40,7 +40,7 @@ const Introduction = () => {
           <p className="text-3xl xxs:text-4xl sm:text-5xl xl:text-6xl font-semibold text-gray-900 leading-tight">
             David Singh
           </p>
-          <p className="text-sm xxs:text-lg lg:text-[18px] my-2 leading-relaxed">
+          <p className="text-sm xxs:text-lg lg:text-[18px] my-4 leading-relaxed">
             A Passionate <span className="bg-highlight">Data Analyst</span> based in{" "}
             <span className="bg-highlight">New Delhi, India</span> with hands-on expertise in
             ETL Pipelines, Statistical Modeling, and Visualizations using{" "}
