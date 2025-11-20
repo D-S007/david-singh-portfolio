@@ -34,12 +34,13 @@ const Introduction = () => {
 
         {/* HEADING + DESCRIPTION */}
         <div className="pt-4 me-8 w-full lg:w-auto transition-all duration-500">
-          <p className="text-3xl xxs:text-4xl sm:text-5xl xl:text-6xl font-semibold w-full">
-            Hey, I’m{" "}
-            <span className="text-nowrap shrink-0 inline-block w-full">David Singh</span>
+          <p className="text-lg xxs:text-xl sm:text-2xl xl:text-3xl font-medium text-gray-800">
+            Hey there, I’m
           </p>
-
-          <p className="text-sm xxs:text-lg lg:text-[18px] my-4 leading-relaxed">
+          <p className="text-3xl xxs:text-4xl sm:text-5xl xl:text-6xl font-semibold text-gray-900 leading-tight">
+            David Singh
+          </p>
+          <p className="text-sm xxs:text-lg lg:text-[18px] my-2 leading-relaxed">
             A Passionate <span className="bg-highlight">Data Analyst</span> based in{" "}
             <span className="bg-highlight">New Delhi, India</span> with hands-on expertise in
             ETL Pipelines, Statistical Modeling, and Visualizations using{" "}
@@ -76,7 +77,6 @@ const Introduction = () => {
               >
                 {skill}
               </span>
-
             ))}
           </div>
         </div>
