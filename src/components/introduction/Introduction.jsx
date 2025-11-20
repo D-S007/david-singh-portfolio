@@ -27,7 +27,7 @@ const Introduction = () => {
   return (
     <div
       id="introduction"
-      className="flex max-lg:flex-col-reverse sm:justify-between pt-10 lg:pt-32 lg:mb-28 max-xl:gap-2 p-4 max-xxl:px-6"
+      className="flex max-lg:flex-col-reverse sm:justify-between pt-4 lg:pt-16 lg:mb-28 max-xl:gap-2 p-4 max-xxl:px-6"
     >
       {/* LEFT SECTION */}
       <div className="w-full flex flex-col max-lg:text-center gap-8">
