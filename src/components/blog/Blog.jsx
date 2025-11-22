@@ -80,7 +80,7 @@ const blogData = [
 
 const Blog = () => {
   return (
-    <div className="content py-16 px-2 relative" id="blog">
+    <div className="content pt-10 pb-20 mt-20 px-2 relative" id="blog">
       <div className="max-w-135 text-center mx-auto pb-17.5">
         <p className="section-title pb-6">Blogs</p>
         <p className="text-xs xs:text-[16px] md:text-lg text-gray-400">
