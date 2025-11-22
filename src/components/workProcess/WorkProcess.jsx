@@ -43,9 +43,10 @@ const workStepData = [
 const WorkProcess = () => {
   return (
     <div
-      className="content grid xl:grid-cols-2 xl:items-center px-2 py-5 md:py-10 lg:py-25 xl:py-35 max-xxl:px-4"
+      className="content grid xl:grid-cols-2 xl:items-center px-2 py-2 md:py-4 lg:py-6 xl:py-8 max-xxl:px-4"
       id="work-process"
     >
+
       <div className="lg:pe-10 xl:pe-35.75 max-xs:mb-3 max-xl:mb-8">
         <p className="section-title max-xl:text-center">Work Process</p>
         {/* UPDATED: Description for a Data Science process */}
