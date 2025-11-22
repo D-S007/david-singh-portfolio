@@ -25,7 +25,7 @@ export default function EducationArrowCard({ item, active, onClick, index }) {
       >
         <div className="flex items-start justify-between">
           <div>
-            <p className="text-xs text-purple-600 font-medium">{item.year}</p>
+            <p className="text-sm text-purple-600 font-medium">{item.year}</p>
             <h4 className="text-lg font-semibold text-gray-800 mt-2">
               {item.institution}
             </h4>
@@ -41,7 +41,7 @@ export default function EducationArrowCard({ item, active, onClick, index }) {
 
       {/* arrow head on the right */}
       <div
-        className={`arrow-head absolute top-0 right-[-36px] h-full transition-opacity duration-200
+        className={`arrow-head absolute top-0 left-[-36px] h-full transition-opacity duration-200
           ${active ? "opacity-100" : "opacity-70"}
         `}
       />

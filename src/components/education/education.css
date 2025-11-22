@@ -1,22 +1,45 @@
 /* styles/education.css */
 
 /* arrow card shape uses clip-path; arrow-head is separate element to create the pointed look */
+/* FLIPPED ARROW CARD */
 .arrow-card {
-  clip-path: polygon(0 0, 86% 0, 100% 50%, 86% 100%, 0 100%);
+  clip-path: polygon(14% 0, 100% 0, 100% 100%, 14% 100%, 0 50%);
   min-height: 120px;
 }
 
-/* arrow head to connect cards visually (right-pointing) */
+/* FLIPPED ARROW HEAD */
 .arrow-head {
   width: 72px;
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  left: -36px;
+  right: auto;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
   background: linear-gradient(90deg, rgba(106,33,255,0.10), rgba(124,58,237,0.10));
-  border-left: 1px solid rgba(99,102,241,0.08);
-  right: -36px; /* half of width to overlap nicely */
+  border-right: 1px solid rgba(99,102,241,0.08);
 }
+
 
 /* responsive adjustments */
 @media (max-width: 768px) {
   .arrow-head { display: none; } /* hide arrow head on small screens for simplicity */
   .arrow-card { width: 100% !important; clip-path: none; border-radius: 12px; }
+}
+
+@media (max-width: 768px) {
+  .arrow-card {
+    width: 100% !important;
+    clip-path: none;
+    border-radius: 12px;
+  }
+}
+
+/* Smooth popup animation */
+@keyframes eduPopup {
+  0% {
+    opacity: 0;
+    transform: scale(0.92) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }

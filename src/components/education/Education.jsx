@@ -15,12 +15,12 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="px-6 py-12 bg-gradient-to-b from-white to-[#FBF9FF]"
+      className="px-6 pt-14 pb-40 mt-18 bg-gradient-to-b from-white to-[#FBF9FF]" // change for top(pt), bottom(pb) spacing; mt for spacing between sections
     >
       <div className="max-w-6xl mx-auto relative">
 
         {/* ---------- HEADING ---------- */}
-        <div className="max-w-3xl text-center mx-auto pb-8">
+        <div className="max-w-3xl text-center mx-auto pb-10"> {/* change pb-7 for spacing between heading and cards */}
           <p className="section-title pb-6">Education</p>
           <p className="text-sm md:text-lg text-gray-500">
             A structured snapshot of my academic journey, core disciplines, and specialization tracks.
@@ -34,7 +34,7 @@ export default function Education() {
             className="
               absolute inset-0 z-20
               bg-white rounded-2xl shadow-xl p-4 cursor-pointer
-              animate-[fadeUp_0.25s_ease-out]
+              animate-[eduPopup_0.3s_ease-out]
             "
           >
             <EducationDetail item={educationData[activeIndex]} />
@@ -43,7 +43,7 @@ export default function Education() {
 
         {/* ---------- SMALL CARDS ---------- */}
         <div className={`${activeIndex !== null ? "opacity-0 pointer-events-none" : ""}`}>
-          <div className="flex gap-6 items-start justify-between">
+          <div className="flex flex-col md:flex-row gap-6 items-stretch md:items-start justify-between">
             {educationData.map((item, i) => (
               <EducationArrowCard
                 key={item.id}
