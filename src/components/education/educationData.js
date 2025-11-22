@@ -13,7 +13,7 @@ const educationData = [
       "Programming Languages": ["Python", "C++", "Java"],
       "Software & Tools": [
         "Software Engineering",
-        "Project Management",
+        "Software Project Management",
         "Technical Communication"
       ],
       "Specializations": [
@@ -38,7 +38,8 @@ const educationData = [
       "Science": ["Physics", "Chemistry"],
       "Mathematics": ["Linear Algebra", "Calculus", "Probability", "Differential Equations"],
       "Computer Science": ["Python"],
-      "Language": ["English"]
+      "Language": ["English"],
+      "Other" : "Physical Education"
     }
   },
   {
@@ -53,7 +54,7 @@ const educationData = [
       "Science": ["Physics", "Chemistry", "Biology"],
       "Mathematics": ["Mathematics Standard"],
       "Computer Applications": ["Python"],
-      "Language": ["Hindi", "English"],
+      "Languages": ["Hindi", "English"],
       "Social Science": ["History", "Geography", "Civics", "Economics"]
     }
   }
