@@ -1,0 +1,22 @@
+/* styles/education.css */
+
+/* arrow card shape uses clip-path; arrow-head is separate element to create the pointed look */
+.arrow-card {
+  clip-path: polygon(0 0, 86% 0, 100% 50%, 86% 100%, 0 100%);
+  min-height: 120px;
+}
+
+/* arrow head to connect cards visually (right-pointing) */
+.arrow-head {
+  width: 72px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  background: linear-gradient(90deg, rgba(106,33,255,0.10), rgba(124,58,237,0.10));
+  border-left: 1px solid rgba(99,102,241,0.08);
+  right: -36px; /* half of width to overlap nicely */
+}
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+  .arrow-head { display: none; } /* hide arrow head on small screens for simplicity */
+  .arrow-card { width: 100% !important; clip-path: none; border-radius: 12px; }
+}
