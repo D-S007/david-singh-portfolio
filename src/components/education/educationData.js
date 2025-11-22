@@ -39,7 +39,7 @@ const educationData = [
       "Mathematics": ["Linear Algebra", "Calculus", "Probability", "Differential Equations"],
       "Computer Science": ["Python"],
       "Language": ["English"],
-      "Other" : "Physical Education"
+      "Additional" : ["Physical Education"]
     }
   },
   {
