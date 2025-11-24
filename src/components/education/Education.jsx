@@ -15,8 +15,18 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="px-6 pt-14 pb-40 mt-18 bg-gradient-to-b from-white to-[#FBF9FF]" // change for top(pt), bottom(pb) spacing; mt for spacing between sections
+      className="
+        px-6 
+        pt-14       
+        pb-46       
+        mt-18       
+        bg-gradient-to-b 
+        from-white 
+        via-[#EDE7FF] 
+        to-[#D8C8FF]   /* darker, richer lavender */
+      "
     >
+
       <div className="max-w-6xl mx-auto relative">
 
         {/* ---------- HEADING ---------- */}
