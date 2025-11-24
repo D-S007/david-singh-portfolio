@@ -277,7 +277,7 @@ const MoreProjects = () => {
     const [skillFilter, setSkillFilter] = useState("All");
 
     // pagination state
-    const PAGE_SIZE = 4;
+    const PAGE_SIZE = 3;
     const [page, setPage] = useState(0);
 
     // Get all unique skills from projects
