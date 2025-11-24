@@ -5,10 +5,10 @@ const MonoBlog = ({ data }) => {
         <img
           src={data?.image}
           alt="Blog"
-          className="w-full h-56.5 object-cover"
+          className="w-[320px] h-[180px] object-cover mx-auto"
         />
         <div className="m-6">
-          <p className="text-[10px] xs:text-[14px] font-normal text-gray-400 ">
+          <p className="text-[10px] xs:text-[14px] font-normal text-gray-400">
             {data?.date} / {data?.comments} Comments
           </p>
           <p className="text-[14px] xs:text-lg font-medium text-[#333333]">
