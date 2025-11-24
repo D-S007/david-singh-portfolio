@@ -4,6 +4,17 @@ import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 
 const experiences = [
   {
+    company: "Internshala",
+    position: "Internshala Student Partner (ISP)",
+    location: "Remote",
+    duration: "Nov 2025 – Present",
+    bullets: [
+      "Motivating students to go for online Internshala Trainings and help them to upskill themselves.",
+      "Promoting Internshala campaigns in your college and helping students to find their dream internships & jobs",
+      "Participating in social media branding campaigns and learn how to communicate for a brand online"
+    ]
+  },
+  {
     company: "IBM SkillsBuild & CSRBOX",
     position: "Data Analytics Intern",
     location: "Remote",
