@@ -4,6 +4,17 @@ import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 
 const experiences = [
   {
+    company: "Oga Business Solutions Pvt. Ltd.",
+    position: "Business Analyst Intern",
+    location: "On-site",
+    duration: "Nov 2025 – Present",
+    bullets: [
+      "Business & Performance Analysis: Analyze sales, revenue, customer behavior, and app usage data to identify growth opportunities and actionable insights.",
+      "Cross Functional Enablement: Partner with sales and operations teams to improve sales performance, collection efficiency, and execution effectiveness.",
+      "Strategic Reporting & Execution: Develop analytical reports and dashboards to support data-driven decision-making and business strategy execution."
+    ]
+  },
+  {
     company: "Internshala",
     position: "Internshala Student Partner (ISP)",
     location: "Remote",
