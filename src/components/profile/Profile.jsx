@@ -14,17 +14,17 @@ const experiences = [
       "Strategic Reporting & Execution: Develop analytical reports and dashboards to support data-driven decision-making and business strategy execution."
     ]
   },
-  {
-    company: "Internshala",
-    position: "Internshala Student Partner (ISP)",
-    location: "Remote",
-    duration: "Nov 2025 – Jan 2025",
-    bullets: [
-      "Motivating students to go for online Internshala Trainings and help them to upskill themselves.",
-      "Promoting Internshala campaigns in your college and helping students to find their dream internships & jobs",
-      "Participating in social media branding campaigns and learn how to communicate for a brand online"
-    ]
-  },
+  // {
+  //   company: "Internshala",
+  //   position: "Internshala Student Partner (ISP)",
+  //   location: "Remote",
+  //   duration: "Nov 2025 – Jan 2025",
+  //   bullets: [
+  //     "Motivating students to go for online Internshala Trainings and help them to upskill themselves.",
+  //     "Promoting Internshala campaigns in your college and helping students to find their dream internships & jobs",
+  //     "Participating in social media branding campaigns and learn how to communicate for a brand online"
+  //   ]
+  // },
   {
     company: "IBM SkillsBuild & CSRBOX",
     position: "Data Analytics Intern",
