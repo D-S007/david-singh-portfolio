@@ -41,7 +41,7 @@ const Introduction = () => {
             David Singh
           </p>
           <p className="text-sm xxs:text-lg lg:text-[18px] my-4 leading-relaxed">
-            A Passionate <span className="bg-highlight">Data Analyst</span> based in{" "}
+            A Passionate <span className="bg-highlight">Business Data Analyst</span> based in{" "}
             <span className="bg-highlight">New Delhi, India</span> with hands-on expertise in
             ETL Pipelines, Statistical Modeling, and Visualizations using{" "}
             <span className="bg-highlight">Python</span>,{" "}

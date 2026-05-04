@@ -5,9 +5,9 @@ import { faCertificate } from "@fortawesome/free-solid-svg-icons";
 const experiences = [
   {
     company: "Oga Business Solutions Pvt. Ltd.",
-    position: "Business Analyst Intern",
+    position: "Junior Business Analyst",
     location: "On-site",
-    duration: "Nov 2025 – Present",
+    duration: "Dec 2025 – Present",
     bullets: [
       "Business & Performance Analysis: Analyze sales, revenue, customer behavior, and app usage data to identify growth opportunities and actionable insights.",
       "Cross Functional Enablement: Partner with sales and operations teams to improve sales performance, collection efficiency, and execution effectiveness.",
@@ -18,7 +18,7 @@ const experiences = [
     company: "Internshala",
     position: "Internshala Student Partner (ISP)",
     location: "Remote",
-    duration: "Nov 2025 – Present",
+    duration: "Nov 2025 – Jan 2025",
     bullets: [
       "Motivating students to go for online Internshala Trainings and help them to upskill themselves.",
       "Promoting Internshala campaigns in your college and helping students to find their dream internships & jobs",
